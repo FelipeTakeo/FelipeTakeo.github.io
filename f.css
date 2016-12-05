@@ -1,0 +1,9 @@
+@charset "UTF-8";
+body {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url(fundo.jpg);
+	margin-bottom: 0px;
+	margin-top: 0px;
+	padding-top: 100px;
+}

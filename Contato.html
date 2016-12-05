@@ -1,0 +1,102 @@
+﻿<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<link href="head.css" rel="stylesheet" type="text/css">
+<link href="f.css" rel="stylesheet" type="text/css">
+<head>
+<title>Contato</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Felipe Noboru Takeo</a>
+    </div>
+	<div class="collapse navbar-collapse" id="myNavbar">
+		<ul class="nav navbar-nav">	
+        <li><a href="Home.html">Home</a></li> 
+        <li><a href="Sobre Mim.html">Sobre Mim</a></li>
+		  <li><a href="Criaçoes.html">Criações</a></li>
+		  <li class="active"><a href="Contato.html">Contato</a></li> 
+		</ul>
+	</div>
+  </div>
+</nav>
+
+
+<div class="container">
+<div class="row">
+<div class="col-md-4">
+<h1 id="contato">Contato</h1>
+  <form role="form">
+    <div class="form-group">
+      <label for="email">Nome:</label>
+      <input type="name" class="form-control" id="name" placeholder="entre com o seu nome">
+    </div>
+    
+  <div style="display:none;"  class="alert alert-success">
+	<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+    <strong>Sucesso!</strong> Esse alerta pode indicar uma ação positiva ou com sucesso.
+  </div>
+  <div style="display:none;"  class="alert alert-info">
+	<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+    <strong>Info!</strong> Esse alerta pode indicar uma informação neutra.
+  </div>
+  <div style="display:none;" id="alerta" class="alert alert-warning">
+	<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+    <strong>Warning!</strong> Voce não digitou seu nome!
+  </div>
+  <div style="display:none;"  class="alert alert-danger">
+	<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+    <strong>Danger!</strong> Esse alerta pode indicar uma ação potencialmente negativa ou perigosa.
+  </div>   
+    <div class="form-group">
+      <label for="pwd">E-mail:</label>
+      <input type="email" class="form-control" id="pwd" placeholder="entre com o seu e-mail">
+    </div>
+    <div class="panel-body"><label for="mensagem">Mensagem: </label>
+<br>
+<form>
+<textarea name="mens" id="msg" cols="180" rows="10"></textarea>
+</form>
+</div>
+  <div class="container">
+	<form class="form">
+		<input type="submit" id="enviar" value="enviar" class="button"/>
+	</form>
+  </div>
+  </form>
+</div>
+<script>
+	$("#enviar").click (function () {
+		
+		var nome = $("#name").val ();
+		if (nome == "") {
+			$("#alerta").css ("display","block");
+			return false;
+		
+		}
+		return true;
+		
+	
+	});
+	
+</script>
+</div>
+</div>
+
+
+
+
+<body>
+</body>
+</html>

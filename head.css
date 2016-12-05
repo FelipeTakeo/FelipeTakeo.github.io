@@ -1,0 +1,10 @@
+@charset "UTF-8";
+.navbar.navbar-default.navbar-fixed-top .container-fluid {
+	color: #FFFFFF;
+	background-color: #000000;
+	text-shadow: 0px 0px;
+	text-transform: uppercase;
+	-webkit-box-shadow: 0px 0px;
+	box-shadow: 0px 0px;
+	opacity: 1;
+}

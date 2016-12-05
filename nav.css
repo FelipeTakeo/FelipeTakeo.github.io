@@ -1,0 +1,8 @@
+@charset "UTF-8";
+.navbar.navbar-default.navbar-fixed-top .container-fluid #myNavbar {
+}
+.navbar.navbar-default.navbar-fixed-top {
+	height: px;
+	bottom: px;
+	top: px;
+}

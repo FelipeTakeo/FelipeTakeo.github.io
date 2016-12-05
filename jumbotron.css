@@ -1,0 +1,6 @@
+@charset "UTF-8";
+.row .col-md-12 .jumbotron {
+	background-image: url(back.jpg);
+	color: #FFFFFF;
+	padding-top: 100px;
+}
